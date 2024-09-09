@@ -76,11 +76,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > The variable drovers is a constant, meaning what it has been assigned as cannot change. It has been assigned the value of the function hireDrovers, when the argument cattleToDrive has been passed through it. I can see that the value of cattleToDrive has been declared as 50 in the variable const cattleToDrive = 50. The hireDrovers function will invoke the variable cattleToDrive and set this to be divided by 10, which means the value of drovers will be 5. This value of 5 will then be assigned to the constant variable numberNeeded. This value will not change because all variables being invoked are constant.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > `for (const drover of drovers)` is a for...of loop. drovers is an array that is being iterated over, while drover is being declared as a constant variable. for every iteration through the objects within drovers, drover will be assigned an element (in this case it will be the first name and last name)
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > (https://www.loom.com/share/7165622158b045ac8ae1210f2dabc7c1)
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +88,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > This is a for loop with forestNumber = 0 as the initialization, should be noted that this variable has been declared using let so this can be adjusted elsewhere in the code. following the initialization is the condition forestNumber < areas.forests, this for loop will continue as long as the condition is true. Finally forestNumber++ is the iteration, the ++ will increment forestNumber by 1 every time this loops. this for loop is a function with one statement  journey.push("forest"). This statement will push the element forest to the end of the Journey array.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > Database is a constant variable (it cannot be changed within the code). Witin the function there are two different arrays. I believe the arrays are set within a function so the local scope does not intertwine with the global scope (names of objects,elements etc)? The first array is a set of Objects called cattleTypes and within these objects there are two elements.The second array is a set of objects called drovers and within these objects there are 4 elements.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > The herdSize is the parameter in this function, but I dont think its value has been defined anywhere in the code?
 
 ## When You Are Done
 
